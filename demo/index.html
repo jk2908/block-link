@@ -1,0 +1,64 @@
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <title>block-link</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <style>
+      * {
+        box-sizing: border-box;
+        margin: 0;
+      }
+
+      body {
+        font-family: system-ui;
+        line-height: 1.5;
+        margin: 80px;
+      }
+
+      header ul {
+        display: flex;
+        gap: 40px;
+      }
+
+      header + main {
+        margin-block-start: 40px;
+      }
+
+      main {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        justify-content: center;
+      }
+
+      a[href] {
+        text-decoration: underline 1px wavy;
+      }
+
+      .block {
+        block-size: 200px;
+        inline-size: 200px;
+        outline: 1px solid red;
+      }
+    </style>
+  </head>
+
+  <body>
+    <header>
+      <ul>
+        <li><a href="/block-link/demo">Demo</a></li>
+        <li><a href="https://github.com/jk2908/block-link">Github</a></li>
+      </ul>
+    </header>
+
+    <main>
+        <block-link>
+          <div class="block">
+            <a href="https://www.google.com" target="_blank">Google</a>
+          </div>
+        </block-link> 
+    </main>
+
+    <script type="module" src="../block-link.js"></script>
+  </body>
+</html>

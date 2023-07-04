@@ -1,0 +1,15 @@
+{
+  "name": "block-link",
+  "version": "0.0.1",
+  "description": "Make whole cards clickable",
+  "main": "index.js",
+  "module": "index.js",
+  "scripts": {
+    "dev": "wds --node-resolve --watch --open"
+  },  "keywords": [],
+  "author": "Jerome Kenway",
+  "license": "MIT",
+  "devDependencies": {
+    "@web/dev-server": "^0.1.32"
+  }
+}
